@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>Art Direction — Elodie Deshayes</title>
+        <meta name="description" content="UI/UX designer | design interactif à Gobelins | Basée à Paris">
+        <meta name="keywords" content="webdesign, graphic design,portfolio, gobelins, UI design, UX design, motion design, paris, france, elodie, deshayes, art director">
+        <meta name="author" content="Elodie Deshayes">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/85/7f/d7/857fd79dfd7bd025e4cbb2169cd46e03.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+	   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	   <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    </head>
+    
+    
+    
+
+    <body>
+        <div id="contain">
+            <div id="enveloppe">
+                    <div id="one">
+                        <h1>Oh... A coming soon page. </h1>
+                        <p>My portfolio is getting a new look. I am trying to cook <span class="previewTeaser ad"><em>some cools stuff</em></span>
+                        <img class="id" src="preview.gif">.
+                    </div>
+                    
+                    <div id="two">
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ancynpwz.json" background="transparent" speed="1" loop autoplay>
+                  </div>
+            </div>
+
+
+            <div id="sub-footer">
+                <p id="copyright">©2021 Elodie Deshayes</p>
+                <ul id="social">
+                        <li><a target="_blank" href="https://www.instagram.com/elodie.dshys/">Instagram</a></li>
+                        <li><a target="_blank" href="https://twitter.com/elodiedshys">Twitter</a></li>
+                        <li><a target="_blank" href="https://dribbble.com/elodiedeshayes">Dribbble</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+        
+        
+    
+</body>
+
+<script type="text/javascript">
+$( function() {
+var div = $( ".draggable" ).draggable({scroll: false});
+});
+
+
+		$('.previewTeaser').mousemove(function(e)
+		{
+			$('.id').css(
+			{
+				'display' : 'inline',
+				'left' : e.pageX - 50,
+				'top' : e.pageY - 50
+			});
+		})
+
+		$('.previewTeaser').mouseout(function()
+		{
+			$('.id').css('display', 'none');
+			console.log("ok");
+		})
+
+</script>
+</html>
