@@ -111,7 +111,7 @@ a {
 /*responsive*/
 
 
-@media screen and (max-width: 800px) {
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
   #social {
     display: none;
   }
@@ -120,15 +120,29 @@ a {
  #one, #two {
     width: 80vw;
     height: auto;
-    padding: 50px 0 0 0;
 }
    
+    
+#one {
+    padding: 10% 0;
+}
+    
+#two {
+    padding: 20% 0;
+}   
+    
 #enveloppe {
     display: flex;
     flex-direction: column-reverse;
-    height: 90vh;
     justify-content: space-around;
     align-items: center;
+    height: auto;
+}
+    
+#sub-footer {
+    padding: 1em 0;
+    width: 80vw;
+    height: auto;
 }
     
     
